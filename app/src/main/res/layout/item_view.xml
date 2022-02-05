@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/small_margin"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/card_view_corner_radius"
+    app:cardElevation="@dimen/card_view_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_padding"
+        app:layout_constraintBottom_toTopOf="@+id/weatherTypeText"
+        app:layout_constraintEnd_toStartOf="@+id/itemDescriptionText"
+        app:layout_constraintStart_toStartOf="@+id/itemDescriptionText"
+        app:layout_constraintTop_toTopOf="@+id/weatherTypeText"
+        tools:context=".ui.ui.home.HomeFragment">
+
+        <ImageView
+            android:id="@+id/weatherTypeImage"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:layout_marginStart="@dimen/small_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/cityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/purple_500"
+            app:layout_constraintStart_toEndOf="@+id/weatherTypeImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/weatherTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/weatherTypeImage"
+            app:layout_constraintTop_toBottomOf="@+id/cityText"
+            tools:text="Cloudy" />
+
+        <TextView
+            android:id="@+id/sunriseSunsetTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/weatherTypeImage"
+            app:layout_constraintTop_toBottomOf="@+id/weatherTypeText"
+            tools:text="Cloudy" />
+
+        <TextView
+            android:id="@+id/windText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/weatherTypeImage"
+            app:layout_constraintTop_toBottomOf="@+id/sunriseSunsetTimeText"
+            tools:text="Cloudy" />
+
+        <TextView
+            android:id="@+id/humidityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/weatherTypeImage"
+            app:layout_constraintTop_toBottomOf="@+id/windText"
+            tools:text="Cloudy" />
+
+        <TextView
+            android:id="@+id/todayDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:textColor="@color/purple_500"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/weatherTypeImage"
+            app:layout_constraintTop_toBottomOf="@+id/humidityText"
+            tools:text="22 Dec 2020" />
+
+        <TextView
+            android:id="@+id/currentTempText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="29C" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

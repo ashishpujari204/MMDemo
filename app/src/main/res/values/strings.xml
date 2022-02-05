@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="okay_text">Okay</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="url_error_message">Please enter valid url</string>
+    <string name="url_input">Enter url</string>
+    <string name="submit_btn_text">Submit</string>
+</resources>
